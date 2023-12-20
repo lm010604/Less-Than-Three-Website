@@ -16,6 +16,9 @@ nav ul li a{
 body {
     background-color: black;
     color: white;
+    font-family: 400 normal 12px / 22px 'Clarkson','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 #main-image {
     display: block;
@@ -26,7 +29,7 @@ body {
 
 #header-flex {
     display: flex;
-    flex-direction: horizontal;
+    flex-direction: row;
 }
 
 .title a {
@@ -66,3 +69,39 @@ footer {
   footer {
     padding: 20px;
   }
+
+
+.members-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.members-1,
+.members-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.member-flex {
+    margin: 20px;
+    text-align: center; /* Center the content within each member-flex item */
+}
+
+.names-font {
+    font-weight: bold;
+    text-shadow: 0 0 10px #e761f5, 0 0 20px #e761f5, 0 0 30px #e761f5, 0 0 40px #e761f5, 0 0 50px #e761f5, 0 0 60px #e761f5, 0 0 70px #e761f5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.wide-text {
+    padding-left: 220px;
+    padding-right: 220px;
+    font-size: 18px;
+    text-align: justify;
+}
