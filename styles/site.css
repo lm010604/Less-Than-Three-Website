@@ -1,1 +1,68 @@
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .5em 1em;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+#main-image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+#header-flex {
+    display: flex;
+    flex-direction: horizontal;
+}
+
+.title a {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: ivymode;
+    letter-spacing: .5vw;
+    color: #fff;
+    vertical-align: middle;
+    padding-left: 10px;
+    text-shadow: 0 0 10px #e761f5, 0 0 20px #e761f5, 0 0 30px #e761f5, 0 0 40px #e761f5, 0 0 50px #e761f5, 0 0 60px #e761f5, 0 0 70px #e761f5;
+    text-decoration: none;
+    display: block;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    margin-left: 10px
+}
+
+footer {
+    text-align: center; /* Center the content within the footer */
+  }
+
+  footer a {
+    display: inline-block; /* Make the anchor elements block-level */
+    margin: 0 15px; /* Adjust the margin to create space between the images */
+  }
+
+  /* Optional: Add some padding to the footer for additional spacing */
+  footer {
+    padding: 20px;
+  }
