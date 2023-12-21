@@ -15,7 +15,7 @@
         <a href="index.html">less than three a cappella</a>
       </div>
       <picture class="logo">
-        <img src="images/logo.png" alt="" height="80">
+        <img src="images/logo.png" alt="" height="0.5">
       </picture>
       <nav>
         <ul>
@@ -29,7 +29,7 @@
               <a href="auditions.html">AUDITIONS</a>
             </li>
             <li>
-              <a href="concert.html">CONCERT</a>
+              <a href="events.html">EVENTS</a>
             <li>
               <a href="contact.html">CONTACT</a>
             </li>
@@ -37,28 +37,75 @@
       </nav>
     </div>
   </div>
-  <picture id="main-image">
-    <img src="images/main-image.jpeg" alt="">
-  </picture>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/main-image.jpeg" alt="">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/distance.jpeg" alt="">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/trophy.jpeg" alt="">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/mik.jpg" alt="">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/dan-tay.jpg" alt="">
+    </div>
+  </div>
+  <div class="audio-container">
+    <div class="audio-content">
+      <img src="images/recordplayer.gif" alt="GIF">
+      <div class="audio-player">
+        <p>Now Playing: <span id="songTitle">Song Title</span></p>
+        <audio id="audioPlayer" controls>
+          <!-- Audio player controls will be dynamically updated -->
+          Your browser does not support the audio element.
+        </audio>
+
+      </div>
+    </div>
+    <div class="playlist">
+      <ul id="playlist">
+        <!-- List of songs will be dynamically generated here -->
+      </ul>
+      <div class="audio-controls">
+        <button id="prevButton">&#9664;&#9664;</button>
+        <button id="playPauseButton">&#9658;</button>
+        <button id="nextButton">&#9654;&#9654;</button>
+      </div>
+    </div>
+  </div>
+
+
+
   <section id="about">
     <h2>About Us</h2>
 
     <div class="wide-text">
       <p>
-        &lt;3 A Cappella, pronounced “Less Than Three”, is an a cappella group from Cornell University in Ithaca, NY open to all treble voices, regardless of gender identity. As a group founded on diversity, inclusivity, and professionalism, our mission is to make music accessible for everyone.
-      </p>
-
-      <p>
-        Less Than Three is committed to producing electrifying harmonies, engaging concerts, complex arrangements, and diverse set lists of everything from Disney to Broadway to Panic! at the Disco. Our dedication to executing technically sound, not to mention extremely entertaining, performances allow us to continually deliver fan favorites from TV shows, movies, video games, and various other pop culture instances as we continue to grow.
+        &lt;3 A Cappella, pronounced “Less Than Three”, is an a cappella group from Cornell University in Ithaca, NY open to all treble voices. As a group founded on diversity, inclusivity, and professionalism, our mission is to make music accessible for everyone. Less Than Three is committed to producing electrifying harmonies, engaging concerts, and diverse set lists of everything from Disney to Pop.
       </p>
     </div>
-    <img src="images/acu.jpeg" alt="" width="400">
+    <div class="home-pictures">
+      <img src="images/picture-1.jpg" alt="" width="260">
+      <img src="images/acu.jpeg" alt="" width="500">
+      <img src="images/picture-2.jpg" alt="" width="260">
+    </div>
   </section>
+
+
+
+
   <footer>
     <a href="https://www.youtube.com/@LessThanThreeACappella" target="_blank"><img src="images/youtube.jpeg" alt="link to youtube page" width="30"></a>
     <a href="https://www.instagram.com/lessthanthreeacappella/" target="_blank"><img src="images/instagram.jpeg" alt="link to Instagram page" width="25"></a>
     <a href="https://www.facebook.com/lessthanthreeacappella/" target="_blank"><img src="images/facebook.jpeg" alt="link to Facebook page" width="15"></a>
   </footer>
+  <script src = "scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/slideshow.js"></script>
+  <script src="scripts/radio.js"></script>
 </body>
 
 </html>
