@@ -14,9 +14,9 @@
       <div class="title">
         <a href="index.html">less than three a cappella</a>
       </div>
-      <picture class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="" height="0.5"></a>
-      </picture>
+
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="" height="50"></a>
+
       <div class="menu-toggle hidden" id="menuToggle">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -34,7 +34,7 @@
               <a href="auditions.html">AUDITION</a>
             </li>
             <li>
-              <a href="events.html">EVENTS</a>
+              <a href="#events">EVENTS</a>
             <li>
               <a href="contact.html">CONTACT</a>
             </li>
@@ -59,37 +59,39 @@
       <img src="images/dan-tay.jpg" alt="">
     </div>
   </div>
-  <h3 id="center">COME SEE US PERFORM!</h3>
-  <div class="audio-container">
 
-    <div class="audio-content">
-      <img src="images/recordplayer.gif" alt="GIF">
-      <div class="audio-player">
-        <p>Now Playing: <span id="songTitle">Song Title</span></p>
-        <audio id="audioPlayer" controls>
-          <!-- Audio player controls will be dynamically updated -->
-          Your browser does not support the audio element.
-        </audio>
+  <section id="events">
+    <h2>Events</h2>
 
+    <div class="audio-container">
+
+      <div class="audio-content">
+        <img src="images/recordplayer.gif" alt="GIF">
+        <div class="audio-player">
+          <p>Now Playing: <span id="songTitle">Song Title</span></p>
+          <audio id="audioPlayer" controls>
+            <!-- Audio player controls will be dynamically updated -->
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+        <img id="poster" src="images/poster.png" alt="poster for spring 2024 concert" width="320">
+
+      <div class="playlist">
+        <h3>SPRING '24 PLAYLIST</h3>
+        <ul id="playlist">
+          <!-- List of songs will be dynamically generated here -->
+        </ul>
+        <div class="audio-controls">
+          <button id="prevButton">&#9664;&#9664;</button>
+          <button id="playPauseButton">&#9658;</button>
+          <button id="nextButton">&#9654;&#9654;</button>
+        </div>
+          <img id="unicornGif" src="images/unicorn.gif" alt="GIF" width="160">
       </div>
     </div>
-
-      <img id="poster" src="images/poster.png" width="320">
-
-    <div class="playlist">
-      <h3>SPRING '24 PLAYLIST</h3>
-      <ul id="playlist">
-        <!-- List of songs will be dynamically generated here -->
-      </ul>
-      <div class="audio-controls">
-        <button id="prevButton">&#9664;&#9664;</button>
-        <button id="playPauseButton">&#9658;</button>
-        <button id="nextButton">&#9654;&#9654;</button>
-      </div>
-        <img id="unicornGif" src="images/unicorn.gif" alt="GIF" width="160">
-    </div>
-  </div>
-
+  </section>
 
   <section id="about">
     <h2>About Us</h2>
@@ -110,6 +112,13 @@
     <a href="https://www.youtube.com/@LessThanThreeACappella" target="_blank"><img src="images/youtube.jpeg" alt="link to youtube page" width="30"></a>
     <a href="https://www.instagram.com/lessthanthreeacappella/" target="_blank"><img src="images/instagram.jpeg" alt="link to Instagram page" width="25"></a>
     <a href="https://www.facebook.com/lessthanthreeacappella/" target="_blank"><img src="images/facebook.jpeg" alt="link to Facebook page" width="15"></a>
+    </br>
+    </br>
+    <p>&copy Less Than Three A Cappella 2023</p>
+    <p>Cornell University, Ithaca, NY 14853</p>
+    <p>lessthanthreeacappella@gmail.com</p>
+    </br>
+    <p>This organization is a registered student organization of Cornell University.</p>
   </footer>
   <script src = "scripts/jquery-3.7.1.js"></script>
   <script src="scripts/slideshow.js"></script>
