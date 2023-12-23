@@ -8,15 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentSongIndex = 0;
 
   const songs = [
-    { title: "Always - Erasure", url: "audio/always.mp3" },
+    { title: "Mr. Sandman - The Chordettes", url: "audio/mr-sandman.mp3" },
     { title: "Take Me To Church - Hozier", url: "audio/hozier.mp3" },
-    { title: "Can't Catch Me Now - Olivia Rodrigo", url: "audio/hozier.mp3" },
-    { title: "You're So Vain - Carly Simon", url: "audio/hozier.mp3" },
     { title: "Before He Cheats - Carrie Underwood", url: "audio/hozier.mp3" },
+    { title: "You're So Vain - Carly Simon", url: "audio/carly-simon.mp3" },
     { title: "Somebody That I Used To Know - Gotye", url: "audio/hozier.mp3" },
-    { title: "Mr. Sandman - The Chordettes", url: "audio/hozier.mp3" },
-    { title: "No Roots - Alice Merton", url: "audio/hozier.mp3" },
-    { title: "Kings and Queens - Ava Max", url: "audio/hozier.mp3" },
+    { title: "No Roots - Alice Merton", url: "audio/no-roots.mp3" },
+    { title: "Can't Catch Me Now - Olivia Rodrigo", url: "audio/oliviarodrigo.mp3" },
+    { title: "Enemy - Imagine Dragons", url: "audio/enemy.mp3" },
+    { title: "Always - Erasure", url: "audio/always.mp3" },
     // Add more songs as needed
   ];
 

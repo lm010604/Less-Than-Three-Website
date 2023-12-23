@@ -104,10 +104,10 @@ h2 {
 }
 
 .wide-text {
-    padding-left: 220px;
-    padding-right: 220px;
+    max-width: 1000px;
     font-size: 18px;
     text-align: justify;
+    margin: 0 auto;
 }
 
 h2 {
@@ -121,6 +121,7 @@ h2 {
 
 .home-pictures {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
@@ -160,11 +161,13 @@ h2 {
 
   .audio-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     padding: 20px;
-    background-color: rgb(29, 1, 91);
+    background-color: rgb(54, 1, 26);
+    padding-top: 0px;
   }
 
   .audio-content {
@@ -188,14 +191,19 @@ h2 {
   }
 
   .playlist {
-    width: 35%;
-    max-width: 300px;
-    background-color: #733396;
+    max-width: 280px;
+    width: 280px;
+    background-color: rgb(111, 3, 53);
+    box-shadow: #000000;
     padding: 20px;
-    border-radius: 8px;
     margin-top: 0px;
     color: #333;
     text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
   }
 
   .playlist h3 {
@@ -266,19 +274,100 @@ h2 {
     background-color: #ddd;
   }
 
-  .playlist {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-
   .unicorn {
     position: absolute;
     bottom: 0;
   }
 
-  .audio-container {
+
+  #poster {
+    margin: 20px;
+    margin-top: 40px;
+    margin-left: -25px;
 
   }
+
+  #center {
+    text-align: center;
+    display: block;
+    background-color: rgb(54, 1, 26);
+    margin: 0px;
+    padding-top: 40px;
+    font-size: 25px;
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  #menu {
+    flex-direction: column;
+    padding-left: 0;
+
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+}
+
+  @media (max-width: 1195px) {
+    .title {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1094px) {
+    .audio-container {
+      flex-direction: column;
+    }
+
+    #poster {
+      order: -1; /* Move the poster to the top */
+
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .playlist {
+      width: 100%; /* Take full width */
+      margin: 0 auto;
+      margin-top: 20px; /* Add some space between poster and playlist */
+    }
+
+    .audio-content {
+      order: 1; /* Move audio content below poster and playlist */
+    }
+  }
+
+  @media (max-width: 1075px) {
+    .wide-text {
+      margin: 20px;
+    }
+  }
+
+@media (max-width: 720px) {
+  #header-flex {
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+}

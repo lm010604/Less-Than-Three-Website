@@ -15,10 +15,15 @@
         <a href="index.html">less than three a cappella</a>
       </div>
       <picture class="logo">
-        <img src="images/logo.png" alt="" height="0.5">
+        <a href="index.html"><img src="images/logo.png" alt="" height="0.5"></a>
       </picture>
+      <div class="menu-toggle hidden" id="menuToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
       <nav>
-        <ul>
+        <ul id="menu">
             <li>
                 <a href="#about">ABOUT</a>
             </li>
@@ -26,7 +31,7 @@
               <a href="members.html">MEMBERS</a>
             </li>
             <li>
-              <a href="auditions.html">AUDITIONS</a>
+              <a href="auditions.html">AUDITION</a>
             </li>
             <li>
               <a href="events.html">EVENTS</a>
@@ -54,7 +59,9 @@
       <img src="images/dan-tay.jpg" alt="">
     </div>
   </div>
+  <h3 id="center">COME SEE US PERFORM!</h3>
   <div class="audio-container">
+
     <div class="audio-content">
       <img src="images/recordplayer.gif" alt="GIF">
       <div class="audio-player">
@@ -66,6 +73,9 @@
 
       </div>
     </div>
+
+      <img id="poster" src="images/poster.png" width="320">
+
     <div class="playlist">
       <h3>SPRING '24 PLAYLIST</h3>
       <ul id="playlist">
@@ -76,7 +86,7 @@
         <button id="playPauseButton">&#9658;</button>
         <button id="nextButton">&#9654;&#9654;</button>
       </div>
-      <img src="images/unicorn.gif" alt="GIF" width="160">
+        <img id="unicornGif" src="images/unicorn.gif" alt="GIF" width="160">
     </div>
   </div>
 
@@ -96,9 +106,6 @@
     </div>
   </section>
 
-
-
-
   <footer>
     <a href="https://www.youtube.com/@LessThanThreeACappella" target="_blank"><img src="images/youtube.jpeg" alt="link to youtube page" width="30"></a>
     <a href="https://www.instagram.com/lessthanthreeacappella/" target="_blank"><img src="images/instagram.jpeg" alt="link to Instagram page" width="25"></a>
@@ -107,6 +114,7 @@
   <script src = "scripts/jquery-3.7.1.js"></script>
   <script src="scripts/slideshow.js"></script>
   <script src="scripts/radio.js"></script>
+  <script src="scripts/hamburgermenu.js"></script>
 </body>
 
 </html>
