@@ -1,7 +1,8 @@
 $(document).ready(function() {
+    $("#menu").addClass("hidden");
     if ($(window).width() <= 720) {
         $("#menuToggle").removeClass("hidden");
-        $("#menu").removeClass("hidden");
+        $("#menu").addClass("hidden");
 
     } else {
         $('#menuToggle').addClass('hidden');

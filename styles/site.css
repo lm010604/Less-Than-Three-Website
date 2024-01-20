@@ -411,6 +411,10 @@ button {
     top: 20px;
     right: 20px;
 }
+
+  .wide-text {
+    font-size: 14px;
+  }
 }
 
   @media (max-width: 1195px) {
