@@ -311,9 +311,13 @@ h2 {
 }
 
 #auditions {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  text-align: center;
   font-size: 25px;
+}
+
+#auditions-poster {
+  padding-bottom: 50px;
 }
 
 #faq {
@@ -388,7 +392,12 @@ button {
   background-color: black;
 }
 
-
+#auditions-poster {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+}
 
 @media (max-width: 720px) {
   #menu {
