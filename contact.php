@@ -36,7 +36,7 @@
             <li>
               <a href="index.html#events">EVENTS</a>
             <li>
-              <a href="contact.html">CONTACT</a>
+              <a href="contact.php">CONTACT</a>
             </li>
         </ul>
       </nav>
