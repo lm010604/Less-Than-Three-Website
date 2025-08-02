@@ -1,0 +1,469 @@
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .5em 1em;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.mySlides img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+
+}
+
+#header-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.title a {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: ivymode;
+    letter-spacing: .5vw;
+    color: #fff;
+    vertical-align: middle;
+    padding-left: 10px;
+    text-shadow: 0 0 10px #e761f5, 0 0 20px #e761f5, 0 0 30px #e761f5, 0 0 40px #e761f5, 0 0 50px #e761f5, 0 0 60px #e761f5, 0 0 70px #e761f5;
+    text-decoration: none;
+    display: block;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+footer {
+    text-align: center; /* Center the content within the footer */
+  }
+
+  footer a {
+    display: inline-block; /* Make the anchor elements block-level */
+    margin: 0 15px; /* Adjust the margin to create space between the images */
+  }
+
+  /* Optional: Add some padding to the footer for additional spacing */
+  footer {
+    padding: 20px;
+  }
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+  padding: 20px;
+}
+
+/* .members-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+
+.member-flex {
+    /* margin: 20px; */
+    text-align: center; /* Center the content within each member-flex item */
+}
+
+.names-font {
+    font-weight: bold;
+    text-shadow: 0 0 10px #e761f5, 0 0 20px #e761f5, 0 0 30px #e761f5, 0 0 40px #e761f5, 0 0 50px #e761f5, 0 0 60px #e761f5, 0 0 70px #e761f5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.wide-text {
+    max-width: 1000px;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+h2 {
+    display: block;
+    margin-top: 50px;
+}
+
+
+.home-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.home-pictures img {
+    margin: 10px; /* Optional: Add margin around each image for spacing */
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+    animation: fadeAnimation 10s ease-in-out forwards; /* Adjust the transition duration as needed */
+  }
+
+  @keyframes fadeAnimation {
+    0% {
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+  .audio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(54, 1, 26);
+    padding-top: 0px;
+  }
+
+  .audio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .audio-player {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #songTitle {
+    font-weight: bold;
+  }
+
+  .playlist {
+    max-width: 280px;
+    width: 280px;
+    background-color: rgb(111, 3, 53);
+    box-shadow: #000000;
+    padding: 20px;
+    margin-top: 0px;
+    color: #333;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .playlist h3 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+  }
+
+  .playlist li {
+    cursor: pointer;
+    list-style-type: none;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .play-button {
+    color: #000000;
+    margin-right: 10px;
+    cursor: pointer;
+
+  }
+
+  .play-button::before {
+    content: '\25B6'; /* Unicode character for a right-pointing triangle */
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+
+  .song-title {
+    display: block;
+  }
+
+  .playlist li:hover {
+    background-color: #e0e0e0;
+  }
+
+  .playlist li:hover .play-button {
+    background-color: #e0e0e0;
+  }
+
+  .playlist li:hover .song-title {
+    text-decoration: none;
+  }
+
+  .audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #prevButton,
+  #playPauseButton,
+  #nextButton {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #733396;
+    color: white;
+  }
+
+  #prevButton:hover,
+  #playPauseButton:hover,
+  #nextButton:hover {
+    background-color: #ddd;
+  }
+
+  .unicorn {
+    position: absolute;
+    bottom: 0;
+  }
+
+
+  #poster {
+    margin: 20px;
+    margin-top: 40px;
+    margin-left: -50px;
+
+  }
+
+  #center {
+    text-align: center;
+    display: block;
+    background-color: rgb(54, 1, 26);
+    margin: 0px;
+    padding-top: 20px;
+    font-size: 25px;
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#auditions {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#auditions-poster {
+  padding-bottom: 50px;
+}
+
+#faq {
+  margin-bottom: 70px;
+}
+
+#faqs {
+  background-color: rgb(54, 1, 26);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#events {
+  background-color: rgb(54, 1, 26);
+  padding-top: 5px;
+}
+
+form ul li {
+  list-style: none;
+  padding: 15px
+}
+
+.contact-info {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 21px;
+  padding: 20px;
+  box-sizing: border-box
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px auto;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  background-color: black;
+  border-color: white;
+  border-width: 0.5px;
+  padding: 5px;
+  margin-top: 10px;
+  color: white;
+  font: 14px sans-serif;
+
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  height: 10em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  font-size: 16px
+}
+
+button {
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+#auditions-poster {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  #menu {
+    flex-direction: column;
+    padding-left: 0;
+
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+}
+
+  @media (max-width: 1195px) {
+    .title {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1094px) {
+    .audio-container {
+      flex-direction: column;
+    }
+
+    #poster {
+      order: -1; /* Move the poster to the top */
+
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .playlist {
+      width: 100%; /* Take full width */
+      margin: 0 auto;
+      margin-top: 20px; /* Add some space between poster and playlist */
+    }
+
+    .audio-content {
+      order: 1; /* Move audio content below poster and playlist */
+    }
+  }
+
+  @media (max-width: 1075px) {
+    .wide-text {
+      margin: 20px;
+    }
+  }
+
+@media (max-width: 720px) {
+  #header-flex {
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1009px) {
+  .members-1,
+  .members-2 {
+    display: flex;
+    flex-direction: column;
+}
+}
