@@ -1,0 +1,7 @@
+{
+    "name": "less-than-three/website",
+    "description": "Website for Less Than Three a cappella - PHPMailer for SMTP",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
